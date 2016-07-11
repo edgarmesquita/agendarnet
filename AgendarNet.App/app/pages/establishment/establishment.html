@@ -1,0 +1,24 @@
+
+<ion-navbar *navbar brand>
+  <ion-title>
+    Publicar
+  </ion-title>
+</ion-navbar>
+
+<ion-content class="establishment">
+    <form [ngFormModel]="loginForm" (submit)="login($event)">
+        <ion-input stacked-label>
+            <ion-label>Username</ion-label>
+            <input type="text" ngControl="username">
+        </ion-input>
+
+        <ion-input stacked-label>
+            <ion-label>Password</ion-label>
+            <input type="password" ngControl="password">
+        </ion-input>
+
+        <div padding>
+            <button block type="submit" [disabled]="!loginForm.valid">Login</button>
+        </div>
+    </form>
+</ion-content>

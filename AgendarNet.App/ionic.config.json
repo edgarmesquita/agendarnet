@@ -1,0 +1,6 @@
+{
+  "name": "agendarnet",
+  "app_id": "net.agendar",
+  "v2": true,
+  "typescript": true
+}
